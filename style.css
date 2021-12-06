@@ -1,0 +1,373 @@
+/*
+Theme Name: Void Tech Theme
+Author: VOID Tech Consulting
+Author URI: https://wordpress.org/
+Description: This theme is setup to be easy flexible and customizable according to your preferences.
+Version: 1.2
+Requires at least: 5.0
+Tested up to: 5.7
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: voidtech
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* START Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* END Reset */
+/* 
+  Put styles here 
+*/
+.header {
+  color:#3C64B1;
+  margin-left:10rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h1{
+  margin-left: 4rem;
+  font-size: 3rem;
+}
+
+.nameHeader {
+  background: #55d6aa;
+}
+
+#experience{
+  margin-top: 5rem;
+}
+
+#contact{
+  margin-top: 5rem;
+}
+
+#aboutMe{
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  max-width: 50em;
+  transform: skewY(-4deg);
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+}
+
+.bigBack{
+  background: gray;
+}
+
+#projects
+{
+  background: linear-gradient(-45deg,#90ee90, #AEE7F8);
+  transform: skewY(4deg);
+  color:#3C64B1;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  font-size: 4rem;
+}
+
+.projectText{
+  transform: skewY(-4deg);
+}
+
+.body-text{
+  font-size:2rem;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+}
+.aboutText{
+  transform: skewY(-4deg);
+  color:white;
+}
+
+#aboutMeList
+{
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.header2{
+ color: black;
+ padding-left: 13rem;
+ margin-top: 5rem;
+ margin-bottom: 5rem;
+ font-size: 3rem;
+ font-weight: bold;
+}
+
+.image-size
+{
+  width: 10rem;
+  height: auto;
+}
+
+.solid{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border-top: 3px solid #bbb;
+}
+
+.horizontal{
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#home{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  content: center;
+}
+
+#spacing{
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+
+.diagonal-box {
+	background-image: linear-gradient(45deg, #90ee90, #AEE7F8);
+  transform: skewY(4deg);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.content { 	
+	max-width: 50em;
+    margin: 0 auto; 
+}
+
+/* HEADER STYLES START */
+header {
+  background: linear-gradient(45deg, #90ee90, #AEE7F8);
+  font-family:'Courier New', Courier, monospace;
+}
+
+.container
+{
+  width: 80%;
+  margin: 0 auto; 
+  padding-top: 2rem;
+}
+
+.headerNameColor{
+  color: #FFFFFF;
+  font-size: 23px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.linkFontSize{
+  font-size: 2rem;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.nameLogo{
+  margin-top: 2rem;
+}
+
+.logo{
+  float: left;
+  padding: 2rem;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 5rem;
+  padding-top: 2rem;
+
+  position: relative;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover{
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 0.5rem; 
+  width: 100%;
+  background-color: #000;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+/* TYPEWRITER SHT */
+
+.typewriter{
+
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  margin-left: 12.5rem;
+  font-size: 5rem;
+  width: max-content;
+  text-align: center; 
+
+}
+
+h3{
+  position: relative;
+  text-align: center;
+
+}
+
+h3::before,
+h3::after{
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align:center;
+}
+
+h3::before{
+  background: white;
+  animation: typewriter 6s 1s steps(33) forwards;
+
+}
+
+h3::after{
+  width: .125em; 
+  background: black;
+  animation: typewriter 6s 1s steps(33) forwards,
+  blink 750ms steps(33) infinite;
+}
+
+@keyframes typewriter {
+  to {
+     left: 100%;
+     }
+}
+ 
+@keyframes blink{
+  to{
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h4{
+  font-size: 3em;
+  text-align: center;
+  opacity:0;
+  transform: translateY(3rem);
+  animation: fadeInUp 1s 8s ease forwards;
+}
+
